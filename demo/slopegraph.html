@@ -4,11 +4,49 @@
   <head>
     <title>jquery-slopegraph</title>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-    <script type="text/javascript" src="./jquery.slopegraph.js"></script>  
+    <script type="text/javascript" src="../lib/jquery.slopegraph.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+       
+        // Define test data
+        var data = [
+          {
+            name: 'foo'
+          , series: [20, 30]
+          }
+        , {
+            name: 'bar'
+          , series: [-1, 15]
+          }
+        , {
+            name: 'fizz'
+          , series: [23, 15]
+          }
+        , {
+            name: 'buzz'
+          , series: [33, 266]
+          }
+        , {
+            name: 'bang'
+          , series: [11, 11]
+          }
+        ];
+
+        // Display options
+        var options = {
+          lineWeight: 2
+        , lineColor: 'black'
+        , lineType: 'solid'
+        };
+
+        $('#graph').slopegraph(data, options);
+
+      });
+    </script>
   </head>
 
   <body>
-    
+    <div id="graph"></div>
   </body>
 
 </html>

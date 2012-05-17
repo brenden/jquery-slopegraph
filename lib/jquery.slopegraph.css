@@ -1,0 +1,14 @@
+.slopegraph {
+  margin: 25px;
+}
+
+.slopegraph-list {
+  padding: 0;
+  margin-top: 10px;
+}
+
+.slopegraph-list li {
+  position: absolute;
+  list-style: none;
+  font-size: 1.2em;
+}

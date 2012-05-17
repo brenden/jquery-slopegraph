@@ -5,6 +5,7 @@
     <title>jquery-slopegraph</title>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <script type="text/javascript" src="../lib/jquery.slopegraph.js"></script>
+    <link href="../lib/jquery.slopegraph.css" rel="stylesheet">
     <script type="text/javascript">
       $(document).ready(function() {
        
@@ -16,7 +17,7 @@
           }
         , {
             name: 'bar'
-          , series: [-1, 15]
+          , series: [11, 15]
           }
         , {
             name: 'fizz'
@@ -24,7 +25,7 @@
           }
         , {
             name: 'buzz'
-          , series: [33, 266]
+          , series: [33, 40]
           }
         , {
             name: 'bang'
@@ -46,7 +47,7 @@
   </head>
 
   <body>
-    <div id="graph"></div>
+    <div class="slopegraph" id="graph" style="height: 300px; border: 1px solid red;"></div>
   </body>
 
 </html>

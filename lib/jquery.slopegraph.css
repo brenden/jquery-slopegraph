@@ -4,11 +4,13 @@
 
 .slopegraph-list {
   padding: 0;
-  margin-top: 10px;
+
+  border: 1px solid blue;
 }
 
 .slopegraph-list li {
   position: absolute;
   list-style: none;
-  font-size: 1.2em;
+  font-size: .9em;
+  border: 1px solid red;
 }

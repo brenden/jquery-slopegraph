@@ -1,22 +1,43 @@
 .slopegraph {
   margin: 25px;
+  height: 300px;
+  border: 1px solid orange;
+}
+
+canvas {
+  border: 2px dotted black;
+  position: absolute;
+  margin-top: 10px;
 }
 
 .slopegraph-list {
   padding: 0;
-  margin-top: 8px;
+  margin: 0;
   border: 1px solid blue;
   display: table;
+  position: absolute;
 }
 
 .slopegraph-list li {
   list-style: none;
   font-size: .9em;
   border: 1px solid red;
-
 }
 
-.slopegraph-value {
-  margin-left: 15px;
+.slopegraph-left {
+  text-align: left;
+}
+
+.slopegraph-right {
+  text-align: right;
+}
+
+.slopegraph-right .slopegraph-value {
+  margin-left: 10px;
+  float: right;
+}
+
+.slopegraph-left .slopegraph-value {
+  margin-right: 10px;
   float: left;
 }

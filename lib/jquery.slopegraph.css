@@ -3,7 +3,6 @@ body {
 }
 
 .slopegraph {
-  height: 300px;
   margin-top: 55px;
   font-family: FreeSerif serif;
 }
@@ -19,11 +18,11 @@ body {
 }
 
 .slopegraph-container h4 {
+  width: 100%;
   padding: 0;
+  float: right;
   position: absolute;
   margin-top: -35px;
-  float: right;
-  width: 100%;
   text-align: center;
 }
 

@@ -10,28 +10,31 @@
       $(document).ready(function() {
        
         // Define test data
-        var data = [
-          {
-            name: 'foo'
-          , series: [20.5, 10.2, 20.8, 25.3]
-          }
-        , {
-            name: 'bar'
-          , series: [11.9, 21.7, 25.6, 20.4]
-          }
-        , {
-            name: 'fizz'
-          , series: [23.1, 50.0, 45.1, 44.7]
-          }
-        , {
-            name: 'buzz'
-          , series: [33.5, 24.4, 15.9, 14.8]
-          }
-        , {
-            name: 'bang'
-          , series: [11.3, 12.2, 15.0, 16.3]
-          }
-        ];
+        var test = {
+          header: ['2010', '2011', '2012', '2013']
+        , data: [
+            {
+              name: 'foo'
+            , series: [20.5, 10.2, 20.8, 25.3]
+            }
+          , {
+              name: 'bar'
+            , series: [11.9, 21.7, 25.6, 20.4]
+            }
+          , {
+              name: 'fizz'
+            , series: [23.1, 50.0, 45.1, 44.7]
+            }
+          , {
+              name: 'buzz'
+            , series: [33.5, 24.4, 15.9, 14.8]
+            }
+          , {
+              name: 'bang'
+            , series: [11.3, 12.2, 10.0, 16.3]
+            }
+          ]
+        };
 
         // Display options
         var options = {
@@ -40,7 +43,7 @@
         , lineType: 'solid'
         };
 
-        $('#graph').slopegraph(data, options);
+        $('#graph').slopegraph(test, options);
 
       });
     </script>

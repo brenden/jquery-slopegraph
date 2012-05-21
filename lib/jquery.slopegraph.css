@@ -1,26 +1,40 @@
-.slopegraph {
-  margin: 25px;
-  height: 300px;
-  font-family: serif;
+body {
+  background-color: #F5F5F5;
 }
 
-canvas {
+.slopegraph {
+  height: 300px;
+  margin-top: 55px;
+  font-family: FreeSerif serif;
+}
+
+.slopegraph canvas {
   position: absolute;
   margin-top: 10px;
 }
 
-.slopegraph-list {
-  padding: 0;
-  margin: 0;
+.slopegraph-container {
   display: table;
   position: absolute;
   padding-left: 8px;
   padding-right: 8px;
 }
 
+.slopegraph-container h4 {
+  padding: 0;
+  position: absolute;
+  margin-top: -30px;
+  font-weight: normal;
+}
+
+.slopegraph-list {
+  padding: 0;
+  margin: 0;
+}
+
 .slopegraph-list li {
   list-style: none;
-  font-size: 1em;
+  font-size: .95em;
 }
 
 .slopegraph-left {

@@ -16,20 +16,20 @@ body {
 .slopegraph-container {
   display: table;
   position: absolute;
-  padding-left: 8px;
-  padding-right: 8px;
 }
 
 .slopegraph-container h4 {
   padding: 0;
   position: absolute;
-  margin-top: -30px;
-  font-weight: normal;
+  margin-top: -35px;
+  float: right;
+  width: 100%;
+  text-align: center;
 }
 
 .slopegraph-list {
-  padding: 0;
   margin: 0;
+  padding: 0 8px 0 8px;
 }
 
 .slopegraph-list li {

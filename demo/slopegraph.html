@@ -16,10 +16,18 @@
             {
               name: 'foo'
             , series: [20.5, 10.2, 20.8, 25.3]
+            , options: {
+                lineColor: 'black'
+              , lineSize: 3
+              }
             }
           , {
               name: 'bar'
             , series: [11.9, 21.7, 25.6, 20.4]
+            , options: {
+                lineColor: 'black'
+              , lineSize: 3
+              }
             }
           , {
               name: 'fizz'
@@ -38,9 +46,8 @@
 
         // Display options
         var options = {
-          lineWeight: 2
-        , lineColor: 'black'
-        , lineType: 'solid'
+          slopeWidth: 80
+        , slopeHeight: 300 
         };
 
         $('#graph').slopegraph(test, options);

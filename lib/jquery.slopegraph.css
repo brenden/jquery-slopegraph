@@ -15,6 +15,11 @@ body {
 .slopegraph-container {
   display: table;
   position: absolute;
+  text-align: left;
+}
+
+.slopegraph-container:first-child {
+  text-align: right;
 }
 
 .slopegraph-container h4 {
@@ -36,24 +41,17 @@ body {
   font-size: .95em;
 }
 
-.slopegraph-left {
-  text-align: left;
-}
-
-.slopegraph-right {
-  text-align: right;
-}
-
 .slopegraph-value {
   color: #3A3A3A;
 }
 
-.slopegraph-right .slopegraph-value {
-  margin-left: 10px;
-  float: right;
-}
-
-.slopegraph-left .slopegraph-value {
+.slopegraph-value {
   margin-right: 10px;
   float: left;
+}
+
+.slopegraph-container:first-child .slopegraph-value {
+  margin-right: 0;
+  margin-left: 10px;
+  float: right;
 }

@@ -3,8 +3,7 @@ body {
 }
 
 .slopegraph {
-  margin-top: 55px;
-  font-family: FreeSerif serif;
+  margin-top: 55px
 }
 
 .slopegraph canvas {
@@ -32,7 +31,7 @@ body {
 
 .slopegraph-list {
   margin: 0;
-  padding: 0 10px 0 10px;
+  padding: 0 12px 0 12px;
 }
 
 .slopegraph-list li {

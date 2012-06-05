@@ -15,29 +15,24 @@
         , data: [
             {
               name: 'foo'
-            , series: [20.5, 10.2, 20.8, 25.3]
-            , options: {
-                lineColor: 'black'
-              , dotColor: 'black'
-              , lineSize: 3
-              }
+            , series: [20.5, 10.2, 12.9, 25.3]
             }
           , {
               name: 'bar'
-            , series: [11.9, 21.7, 25.6, 20.4]
-            , options: {
-                lineColor: 'black'
-              , dotColor: 'black'
-              , lineSize: 3
-              }
+            , series: [11.9, 21.7, 25.6, 30.4]
             }
           , {
               name: 'fizz'
             , series: [23.1, 50.0, 45.1, 44.7]
+            , options: {
+                lineColor: '#85AAC0'
+              , dotColor: '#276080'
+              , lineSize: 4
+              }
             }
           , {
               name: 'buzz'
-            , series: [33.5, 24.4, 15.9, 14.8]
+            , series: [33.5, 24.4, 20.8, 14.8]
             }
           , {
               name: 'bang'
@@ -50,7 +45,8 @@
         var options = {
           slopeWidth: 110
         , slopeHeight: 300 
-        , dotSize: 5
+        , dotSize: 4
+        , dotColor: '#212121'
         };
 
         $('#graph').slopegraph(test, options);

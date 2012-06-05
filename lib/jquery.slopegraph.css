@@ -9,7 +9,6 @@ body {
 
 .slopegraph canvas {
   position: absolute;
-  margin-top: 3px;
 }
 
 .slopegraph-container {

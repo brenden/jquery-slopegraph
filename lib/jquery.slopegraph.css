@@ -53,3 +53,12 @@ body {
   margin-left: 10px;
   float: right;
 }
+
+.highlight {
+  color: #276080;
+  font-weight: bold;
+}
+
+.highlight .slopegraph-value {
+  color: #6F95AC;
+}

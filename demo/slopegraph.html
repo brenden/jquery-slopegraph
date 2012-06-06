@@ -50,14 +50,40 @@
         , dotColor: '#212121'
         };
 
-        $('#graph').slopegraph(test, options);
+        $('table').slopegraph(options);
 
       });
     </script>
   </head>
 
   <body>
+
+    <!-- table input -->
+    <table>
+      <thead>
+        <tr>
+          <th></th>
+          <th>2010</th>
+          <th>2011</th>
+          <th>2012</th>
+          <th>2013</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>Foo</th> <td>20.5</td> <td>10.2</td> <td>12.9</td> <td>25.3</td>
+        </tr>
+        <tr>
+          <th>Bar</th> <td>12.7</td> <td>16.2</td> <td>18.0</td> <td>20.9</td>
+        </tr>
+        <tr>
+          <th>Fizz</th> <td>20.5</td> <td>14.2</td> <td>24.5</td> <td>25.3</td>
+        </tr>
+      </tbody>
+    </table>
+
     <div class="slopegraph" id="graph"></div>
+
   </body>
 
 </html>

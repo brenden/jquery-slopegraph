@@ -47,18 +47,12 @@
 }
 
 .slopegraph-value {
-  min-width: 30px;
+  min-width: 40px;
   color: #3A3A3A;
-}
-
-.slopegraph-value {
-  margin-right: 10px;
   float: left;
 }
 
 .slopegraph-container:first-child .slopegraph-value {
-  margin-right: 0;
-  margin-left: 10px;
   float: right;
 }
 

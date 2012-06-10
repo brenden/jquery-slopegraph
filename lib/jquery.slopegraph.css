@@ -1,13 +1,5 @@
-body {
-  background-color: #F5F5F5;
-}
-
 .slopegraph {
-  margin-top: 55px
-}
-
-.slopegraph canvas {
-  position: absolute;
+  margin-top: 55px;
 }
 
 .slopegraph-container {
@@ -20,13 +12,28 @@ body {
   text-align: right;
 }
 
+.slopegraph h3 {
+  text-align: center;
+  font-size: .95em;
+  margin-top: 20px;
+}
+
 .slopegraph-container h4 {
   width: 100%;
-  padding: 0;
-  float: right;
   position: absolute;
   margin-top: -35px;
   text-align: center;
+  padding-bottom: 5px;
+}
+
+.slopegraph-container.first h4 {
+  text-align: right;
+  margin-left: -12px;
+}
+
+.slopegraph-container.last h4 {
+  text-align: left;
+  margin-left: 12px;
 }
 
 .slopegraph-list {
@@ -40,6 +47,7 @@ body {
 }
 
 .slopegraph-value {
+  min-width: 30px;
   color: #3A3A3A;
 }
 

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>jquery-slopegraph</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="../lib/jquery.slopegraph.js"></script>
+    <link href="../lib/jquery.slopegraph.css" rel="stylesheet">
+    <script type="text/javascript">
+      $(document).ready(function() {
+      
+        var highlight = {
+          lineSize: 4
+        , lineColor: '#85AAC0'
+        , dotColor: '#276080'
+        , addClass: 'highlight'
+        };
+
+        // Define test data
+        var internetAccess = {
+          header: ['2005', '2007', '2009', '2011']
+        , data: [
+            {
+              name: 'Africa'
+            , series: [1.0, 1.7, 3.4, 5.7]
+            }
+          , {
+              name: 'Arab States'
+            , series: [9.3, 12.9, 18.2, 26.1] 
+            }
+          , {
+              name: 'Asia & Pacific'
+            , series: [11.8, 15.8, 18.5, 24.9]
+            }
+          , {
+              name: 'CIS'
+            , series: [5.3, 16.8, 27.0, 38.5]
+            }
+          , {
+              name: 'Europe'
+            , series: [42.0, 51.7, 62.4, 72.2] 
+            }
+          , {
+              name: 'The Americas'
+            , series: [32.7, 36.8, 42.0, 49.7]
+            }
+          ]
+        };
+
+
+        var test = {
+          title: '% of Households with a Computer'
+        , header: ['2005', '2011']
+        , data: [
+            {
+              name: 'Africa'
+            , series: [3.0, 7.9]
+            }
+          , {
+              name: 'Arab States'
+            , series: [14.9, 30.7] 
+            }
+          , {
+              name: 'Asia & Pacific'
+            , series: [20.1, 28.5]
+            }
+          , {
+              name: 'CIS'
+            , series: [10.8, 43.8]
+            }
+          , {
+              name: 'Europe'
+            , series: [52.8, 75.5] 
+            }
+          , {
+              name: 'The Americas'
+            , series: [40.9, 53.6]
+            }
+          ]
+        }; 
+
+        // Display options
+        var options = {
+          slopeWidth: 110
+        , slopeHeight: 300 
+        , dotSize: 4
+        , dotColor: '#212121'
+        };
+
+        $('table').slopegraph(options);
+        $('#graph').slopegraph(test, options);
+
+      });
+    </script>
+  </head>
+
+  <body>
+
+    <!-- table input -->
+    <h2>Data loaded from table</h2>
+    <table>
+      <thead>
+        <tr>
+          <th></th>
+          <th>2010</th>
+          <th>2011</th>
+          <th>2012</th>
+          <th>2013</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>Foo</th> <td>20.5</td> <td>10.2</td> <td>12.9</td> <td>25.3</td>
+        </tr>
+        <tr>
+          <th>Bar</th> <td>12.7</td> <td>16.2</td> <td>18.0</td> <td>20.9</td>
+        </tr>
+        <tr>
+          <th>Fizz</th> <td>20.5</td> <td>14.2</td> <td>24.5</td> <td>25.3</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <br />
+    <br />
+
+    <div class="slopegraph" id="graph"></div>
+
+  </body>
+
+</html>

@@ -53,6 +53,7 @@
           slopeWidth: 110
         , slopeHeight: 230 
         , lineSize: 5
+        , decimalPlaces: 0
         };
 
         $('#graph').slopegraph(popplerConsumption, options);
@@ -74,6 +75,10 @@
       .slopegraph-list li {
         font-weight: bold;
         text-shadow: 1px 1px white;
+      }
+
+      .slopegraph-value {
+        margin-right: 0;
       }
 
       .slopegraph h3, .slopegraph h4 {

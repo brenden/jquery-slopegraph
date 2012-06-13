@@ -39,14 +39,11 @@
 .slopegraph-list {
   margin: 0;
   padding: 0 12px 0 12px;
-
 }
 
 .slopegraph-list li {
   list-style: none;
   font-size: .95em;
-  padding-top: 2px;
-
 }
 
 .slopegraph-value {

@@ -25,7 +25,7 @@ var computerOwnership = {
       name: 'Arab States'
     , series: [14.9, 30.7] 
     }
-    //and so on...
+    // and so on...
   ]
 }; 
 
@@ -47,7 +47,7 @@ The above code will result in the following slopegraph:
 ### Reading from a table
 
 As an alternative to inputing the graph data as a JavaScript object, you can specify an HTML table from which to read the
-data. This allows for graceful degradation in environements which don't support JavaScript and makes it easy to add 
+data. This allows for graceful degradation in environments which don't support JavaScript and makes it easy to add 
 slopegraphs to existing webpages.
 
 The data should be encoded in a table like so:
@@ -58,22 +58,16 @@ The data should be encoded in a table like so:
   <thead>
     <tr>
       <th></th>
-      <th>2011</th>
-      <th>2012</th>
-      <th>2013</th>
+      <th>2011</th> <th>2012</th> <th>2013</th>
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <th>Foo</th> <td>18.4</td> <td>10.2</td> <td>12.9</td>
-    </tr>
-    <tr>
-      <th>Bar</th> <td>12.7</td> <td>16.2</td> <td>18.0</td>
-    </tr>
+    <tr> <th>Foo</th> <td>18.4</td> <td>10.2</td> <td>12.9</td> </tr>
+    <tr> <th>Bar</th> <td>12.7</td> <td>16.2</td> <td>18.0</td> </tr>
   </tbody>
 </table>
 ```
-The table can be made into a slopegraph like this:
+The table can then be made into a slopegraph like this:
 
 ```javascript
 $('#table-demo').slopegraph(options);
@@ -104,10 +98,78 @@ var example = {
 };
 
 $('#graph').slopegraph(example, { lineColor: 'blue' });
-
 ```
 
 ## Option parameters
+
+<table>
+  <thead>
+    <tr>
+      <th>Option</th>
+      <th>Default Value</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>slopeWidth</th> 
+      <td>100</td>
+      <td>The pixel width of the slopeline box</td> 
+    </tr>
+    <tr>
+      <th>slopeHeight</th> 
+      <td>300</td> 
+      <td>The pixel height of the slopeline box</td> 
+    </tr>
+    <tr>
+      <th>reverseEntries</th>
+      <td>false</td> 
+      <td>Whether or not the entries should be reversed, making the lowest value occupy the highest vertical position</td> 
+    </tr>
+    <tr>
+      <th>lineColor</th> 
+      <td>'#545454'</td> 
+      <td>The color of the slopelines</td> 
+    </tr>
+    <tr>
+      <th>lineSize</th>
+      <td>1.5</td> 
+      <td>The thickness of the slopelines</td> 
+    </tr>
+    <tr>
+      <th>dotColor</th> 
+      <td>'#545454'</td> 
+      <td>The color of the end-line dots</td> 
+    </tr>
+    <tr>
+      <th>dotSize</th> 
+      <td>0</td> 
+      <td>The radius of the end-line dots. If 0, then no dots are drawn.</td> 
+    </tr>
+    <tr>
+      <th>dotColor</th> 
+      <td>'#545454'</td> 
+      <td>The color of the end-line dots</td> 
+    </tr>
+    <tr>
+      <th>addClass</th> 
+      <td>undefined</td> 
+      <td>When specified as a series option, this will add the given class to all list entries of the series. This makes
+          it easy to apply special styles to the labels of a given series (see demo 3).</td> 
+    </tr>
+    <tr>
+      <th>decimalPlaces</th> 
+      <td>1</td> 
+      <td>The number of decimal places to show in the the value labels</td> 
+    </tr>
+    <tr>
+      <th>omitInteriorLabels</th> 
+      <td>false</td>
+      <td>Whether or not to hide the labels for all but the first and last entries of each series. For an example of
+        this property in use, see demo 2</td> 
+    </tr>
+  </tbody>
+</table>
 
 
 ## Dependencies

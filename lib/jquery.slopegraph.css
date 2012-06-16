@@ -56,7 +56,7 @@
 }
 
 .slopegraph-container:first-child .slopegraph-value {
-  float: right;
+  float: none;
 }
 
 .slopegraph-container:first-child .slopegraph-name {

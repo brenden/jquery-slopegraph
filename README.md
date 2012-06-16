@@ -58,7 +58,6 @@ The data should be encoded in a table like so:
   <thead>
     <tr>
       <th></th>
-      <th>2010</th>
       <th>2011</th>
       <th>2012</th>
       <th>2013</th>
@@ -66,13 +65,10 @@ The data should be encoded in a table like so:
   </thead>
   <tbody>
     <tr>
-      <th>Foo</th> <td>18.4</td> <td>10.2</td> <td>12.9</td> <td>25.3</td>
+      <th>Foo</th> <td>18.4</td> <td>10.2</td> <td>12.9</td>
     </tr>
     <tr>
-      <th>Bar</th> <td>12.7</td> <td>16.2</td> <td>18.0</td> <td>19.0</td>
-    </tr>
-    <tr>
-      <th>Fizz</th> <td>20.5</td> <td>14.2</td> <td>24.5</td> <td>25.3</td>
+      <th>Bar</th> <td>12.7</td> <td>16.2</td> <td>18.0</td>
     </tr>
   </tbody>
 </table>
@@ -87,7 +83,7 @@ $('#table-demo').slopegraph(options);
 
 If an `options` object is passed as a parameter to the slopegraph call, it will apply to every series in the graph.
 However, it is possible to override the global options on a series-by-series basis by attaching an `options` object to 
-an individual series. For example, the following data will have its 'Foo' series drawn in red, and every other one 
+an individual series. For example, the following data will have its "Foo" series drawn in red, and every other one 
 drawn in blue.
 
 ```javascript

@@ -1,0 +1,74 @@
+.slopegraph {
+  margin-top: 55px;
+}
+
+.slopegraph-container {
+  display: inline-block;
+  position: absolute;
+  text-align: left;
+}
+
+.slopegraph-container:first-child {
+  text-align: right;
+}
+
+.slopegraph h3 {
+  text-align: center;
+  font-size: .95em;
+  margin-top: 20px;
+}
+
+.slopegraph-container h4 {
+  width: 100%;
+  position: absolute;
+  margin-top: -35px;
+  text-align: center;
+  padding-bottom: 5px;
+}
+
+.slopegraph-container.first h4 {
+  text-align: right;
+  margin-left: -12px;
+}
+
+.slopegraph-container.last h4 {
+  text-align: left;
+  margin-left: 12px;
+}
+
+.slopegraph-list {
+  margin: 0;
+  padding: 0 12px 0 12px;
+}
+
+.slopegraph-list li {
+  list-style: none;
+  font-size: .95em;
+}
+
+.slopegraph-value {
+  color: #3A3A3A;
+  float: left;
+}
+
+.slopegraph-name {
+  margin-left: 10px;
+}
+
+.slopegraph-container:first-child .slopegraph-value {
+  float: none;
+}
+
+.slopegraph-container:first-child .slopegraph-name {
+  margin-left: 0px;
+  margin-right: 10px;
+}
+
+.highlight {
+  color: #276080;
+  font-weight: bold;
+}
+
+.highlight .slopegraph-value {
+  color: #6F95AC;
+}

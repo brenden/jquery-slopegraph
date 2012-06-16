@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>jquery-slopegraph</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="../lib/jquery.slopegraph.js"></script>
+    <link href="../lib/jquery.slopegraph.css" rel="stylesheet">
+    <script type="text/javascript">
+      $(document).ready(function() {
+      
+        // Source: http://www.itu.int/ITU-D/ict/statistics/at_glance/KeyTelecom.html
+        var computerOwnership = {
+          title: '% of Households with a Computer'
+        , header: ['2005', '2011']
+        , data: [
+            {
+              name: 'Africa'
+            , series: [3.0, 7.9]
+            }
+          , {
+              name: 'Arab States'
+            , series: [14.9, 30.7] 
+            }
+          , {
+              name: 'Asia & Pacific'
+            , series: [20.1, 28.5]
+            }
+          , {
+              name: 'CIS'
+            , series: [10.8, 43.8]
+            }
+          , {
+              name: 'Europe'
+            , series: [52.8, 75.5] 
+            }
+          , {
+              name: 'The Americas'
+            , series: [40.9, 53.6]
+            }
+          ]
+        }; 
+
+        // Display options
+        var options = {
+          slopeWidth: 110
+        , slopeHeight: 300 
+        , dotSize: 4
+        , dotColor: '#212121'
+        };
+
+        // Create slopegraph
+        $('#graph').slopegraph(computerOwnership, options);
+      });
+    </script>
+  </head>
+  <body>
+    <div id="graph"></div>
+  </body>
+</html>

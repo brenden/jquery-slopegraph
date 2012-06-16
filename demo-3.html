@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>jquery-slopegraph</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="../lib/jquery.slopegraph.js"></script>
+    <link href="../lib/jquery.slopegraph.css" rel="stylesheet">
+    <script type="text/javascript">
+      $(document).ready(function() {
+      
+        // Define test data
+        var popplerConsumption = {
+          title: 'Popplers Consumed by Day of Week'
+        , header: ['Friday', 'Saturday', 'Sunday']
+        , data: [
+            {
+              name: 'Fry'
+            , series: [4, 12, 15]
+            , options: {
+                lineColor: '#F56E00'
+              , addClass: 'fry'
+              }
+            }
+          , {
+              name: 'Leela'
+            , series: [2, 5, 0] 
+            , options: {
+                lineColor: '#8F2CA0'
+              , addClass: 'leela'
+              }
+            }
+          , {
+              name: 'Scruffy'
+            , series: [1, 3, 7]
+            , options: {
+                lineColor: '#3D5263'
+              , addClass: 'scruffy'
+              }
+            }
+          , {
+              name: 'Dr. Zoidberg'
+            , series: [7, 9, 11]
+            , options: {
+                lineColor: '#FF6565'
+              , addClass: 'zoidberg'
+              }
+            }
+          ]
+        };
+
+        // Display options
+        var options = {
+          slopeWidth: 110
+        , slopeHeight: 230 
+        , lineSize: 5
+        , decimalPlaces: 0
+        };
+
+        $('#graph').slopegraph(popplerConsumption, options);
+      });
+    </script>
+    <style type="text/css">
+
+      .slopegraph {
+        font-family: Arial, sans-serif;
+      }
+
+      .slopegraph-list {
+        padding: 10px;
+        border-radius: 4px;
+        background-color: #E8E8E8;
+        border: 1px solid #C5C5C5;
+      }
+
+      .slopegraph-list li {
+        font-weight: bold;
+        text-shadow: 1px 1px white;
+      }
+
+      .slopegraph h3, .slopegraph h4 {
+        color: #232323;
+        font-size: 1.2em;
+      }
+
+      .fry { color: #F56E00; }
+      .leela { color: #8F2CA0 ; }
+      .scruffy { color: #3D5263; }
+      .zoidberg { color: #FF6565; }
+
+    </style>
+  </head>
+  <body>
+    <div class="slopegraph" id="graph"></div>
+  </body>
+</html>

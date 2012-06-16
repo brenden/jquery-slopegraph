@@ -7,7 +7,7 @@ This plugin is a jQuery implementation of Edward Tufte's slopegraph.
 A slopegraph is a simple yet rarely-used design for displaying changes in multiple data series over time. The
 graph was introduced by Edward Tufte in his 1983 book *The Visual Display of Quantitative Information*, but has only
 recently seen much use. The article [Edward Tufte’s “Slopegraphs”](http://charliepark.org/slopegraphs/) gives a good
-run down of when slopegraphs are a good choice for showing data:
+rundown of when slopegraphs are a good choice for showing data:
 > Basically: Any time you’d use a line chart to show a progression of univariate data among multiple actors over time,
 > you might have a good candidate for a slopegraph.
 
@@ -160,7 +160,7 @@ $('#graph').slopegraph(example, { lineColor: 'blue' });
       <th>addClass</th> 
       <td>undefined</td> 
       <td>When specified as a series option, this will add the given class to all list entries of the series. This makes
-          it easy to apply special styles to the labels of a given series (see demo 3).</td> 
+          it easy to apply special styles to the labels of a given series (see <a href="http://brenden.github.com/jquery-slopegraph/demo-3.html">demo 3</a>).</td> 
     </tr>
     <tr>
       <th>decimalPlaces</th> 
@@ -171,7 +171,7 @@ $('#graph').slopegraph(example, { lineColor: 'blue' });
       <th>omitInteriorLabels</th> 
       <td>false</td>
       <td>Whether or not to hide the labels for all but the first and last entries of each series. For an example of
-        this property in use, see demo 2</td> 
+        this property in use, see <a href="http://brenden.github.com/jquery-slopegraph/demo-2.html">demo 2</a></td> 
     </tr>
   </tbody>
 </table>

@@ -4,6 +4,12 @@ jquery-slopegraph
 This plugin is a jQuery implementation of Edward Tufte's slopegraph.  
 
 ## Motivation
+A slopegraph is a simple yet rarely-used design for displaying changes in multiple data series over time. The
+graph was introduced by Edward Tufte in his 1983 book *The Visual Display of Quantitative Information*, but has only
+recently seen much use. The article [Edward Tufte’s “Slopegraphs”](http://charliepark.org/slopegraphs/) gives a good
+run down of when slopegraphs are a good choice for showing data:
+> Basically: Any time you’d use a line chart to show a progression of univariate data among multiple actors over time,
+> you might have a good candidate for a slopegraph.
 
 ## Examples
 
@@ -82,16 +88,16 @@ drawn in blue.
 ```javascript
 var example = {
   title: 'Highlighting one series'
-, header: ['2012', '2013']
+, header: ['2011', '2012', '2013']
 , data: [
   {
     name: 'Foo'
-  , series: [42, 80]
+  , series: [42, 80, 85]
   , options: { lineColor: 'red' }
   }
 , {
     name: 'Bar'
-  , series: [7, 99] 
+  , series: [7, 99, 53] 
   }
   // ...    
 };

@@ -4,12 +4,21 @@ jquery-slopegraph
 This plugin is a jQuery implementation of Edward Tufte's slopegraph.  
 
 ## Motivation
+A slopegraph is a simple yet rarely-used design for displaying changes in multiple data series over time. The
+graph was introduced by Edward Tufte in his 1983 book *The Visual Display of Quantitative Information*, but has only
+recently seen much use. The article [Edward Tufte’s “Slopegraphs”](http://charliepark.org/slopegraphs/) gives a good
+rundown of when slopegraphs are a good choice for showing data:
+> Basically: Any time you’d use a line chart to show a progression of univariate data among multiple actors over time,
+> you might have a good candidate for a slopegraph.
 
 ## Examples
 
 ### Basic slopegraph
 
-Let's create a classic, two-column slopegraph showing how global computer ownership has increased from 2005 to 2011.
+Below is a classic, two-column slopegraph showing how global computer ownership has increased from 2005 to 2011. Beneath 
+the graph is the code which generated it.
+
+<img src="http://github.com/brenden/jquery-slopegraph/raw/master/demo/slopegraph.png" />
 
 ```javascript
 // Source: http://www.itu.int/ITU-D/ict/statistics/at_glance/KeyTelecom.html
@@ -32,7 +41,6 @@ var computerOwnership = {
 // Display options
 var options = {
   slopeWidth: 110
-, slopeHeight: 300 
 , dotSize: 4
 , dotColor: '#212121'
 };
@@ -40,9 +48,6 @@ var options = {
 // Call jquery-slopegraph
 $('#graph').slopegraph(computerOwnership, options);
 ```
-
-The above code will result in the following slopegraph:
-
 
 ### Reading from a table
 
@@ -83,16 +88,16 @@ drawn in blue.
 ```javascript
 var example = {
   title: 'Highlighting one series'
-, header: ['2012', '2013']
+, header: ['2011', '2012', '2013']
 , data: [
   {
     name: 'Foo'
-  , series: [42, 80]
+  , series: [42, 80, 85]
   , options: { lineColor: 'red' }
   }
 , {
     name: 'Bar'
-  , series: [7, 99] 
+  , series: [7, 99, 53] 
   }
   // ...    
 };
@@ -155,7 +160,7 @@ $('#graph').slopegraph(example, { lineColor: 'blue' });
       <th>addClass</th> 
       <td>undefined</td> 
       <td>When specified as a series option, this will add the given class to all list entries of the series. This makes
-          it easy to apply special styles to the labels of a given series (see demo 3).</td> 
+          it easy to apply special styles to the labels of a given series (see <a href="http://brenden.github.com/jquery-slopegraph/demo-3.html">demo 3</a>).</td> 
     </tr>
     <tr>
       <th>decimalPlaces</th> 
@@ -166,7 +171,7 @@ $('#graph').slopegraph(example, { lineColor: 'blue' });
       <th>omitInteriorLabels</th> 
       <td>false</td>
       <td>Whether or not to hide the labels for all but the first and last entries of each series. For an example of
-        this property in use, see demo 2</td> 
+        this property in use, see <a href="http://brenden.github.com/jquery-slopegraph/demo-2.html">demo 2</a></td> 
     </tr>
   </tbody>
 </table>

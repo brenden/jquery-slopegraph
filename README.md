@@ -4,7 +4,7 @@ jquery-slopegraph
 This plugin is a jQuery implementation of Edward Tufte's slopegraph.  
 
 ## Motivation
-A slopegraph is a simple yet rarely-used design for displaying changes in multiple data series over time. The
+A slopegraph is a simple yet rarely-used design for displaying changes in multiple series over time. The
 graph was introduced by Edward Tufte in his 1983 book *The Visual Display of Quantitative Information*, but has only
 recently seen much use. The article [Edward Tufte’s “Slopegraphs”](http://charliepark.org/slopegraphs/) gives a good
 rundown of when slopegraphs are a good choice for showing data:
@@ -105,6 +105,10 @@ var example = {
 $('#graph').slopegraph(example, { lineColor: 'blue' });
 ```
 
+For live examples, see demos [#1](http://brenden.github.com/jquery-slopegraph/demo-1.html),
+[#2](http://brenden.github.com/jquery-slopegraph/demo-2.html), and
+[#3](http://brenden.github.com/jquery-slopegraph/demo-3.html).
+
 ## Option parameters
 
 <table>
@@ -171,12 +175,7 @@ $('#graph').slopegraph(example, { lineColor: 'blue' });
       <th>omitInteriorLabels</th> 
       <td>false</td>
       <td>Whether or not to hide the labels for all but the first and last entries of each series. For an example of
-        this property in use, see <a href="http://brenden.github.com/jquery-slopegraph/demo-2.html">demo 2</a></td> 
+        this property in use, see <a href="http://brenden.github.com/jquery-slopegraph/demo-2.html">demo 2</a>.</td> 
     </tr>
   </tbody>
 </table>
-
-
-## Dependencies
-jquery-slopegraph uses nothing but HTML and the `canvas` element, so its only dependency is jQuery.
-

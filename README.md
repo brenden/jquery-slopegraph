@@ -9,7 +9,10 @@ This plugin is a jQuery implementation of Edward Tufte's slopegraph.
 
 ### Basic slopegraph
 
-Let's create a classic, two-column slopegraph showing how global computer ownership has increased from 2005 to 2011.
+Below is a classic, two-column slopegraph showing how global computer ownership has increased from 2005 to 2011. Beneath 
+the graph is the code which generated it.
+
+<img src="http://github.com/brenden/jquery-slopegraph/raw/master/demo/slopegraph.png" />
 
 ```javascript
 // Source: http://www.itu.int/ITU-D/ict/statistics/at_glance/KeyTelecom.html
@@ -32,7 +35,6 @@ var computerOwnership = {
 // Display options
 var options = {
   slopeWidth: 110
-, slopeHeight: 300 
 , dotSize: 4
 , dotColor: '#212121'
 };
@@ -40,9 +42,6 @@ var options = {
 // Call jquery-slopegraph
 $('#graph').slopegraph(computerOwnership, options);
 ```
-
-The above code will result in the following slopegraph:
-
 
 ### Reading from a table
 

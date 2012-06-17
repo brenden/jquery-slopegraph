@@ -1,0 +1,27 @@
+{
+  "name": "jquery-slopegraph",
+  "version": "1.0.0",
+  "title": "jQuery Slopegraph",
+  "author": {
+    "name": "Brenden Kokoszka",
+    "url": "http://github.com/brenden"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://opensource.org/licenses/MIT"
+    },
+  ],
+  "jquery": {
+    "dependencies": {
+      "jquery": ">=1.7.0"
+    }
+  },
+  "description": "A plugin for generating slopegraphs"
+  "keywords": [
+    "graph",
+    "slopegraph",
+    "tufte"
+  ],
+  "homepage": "http://github.com/brenden/jquery-slopegraph"
+}

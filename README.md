@@ -173,3 +173,6 @@ For live examples, see demos [#1](http://brenden.github.com/jquery-slopegraph/de
     </tr>
   </tbody>
 </table>
+
+## Tests
+Tests are written with QUnit and can be run by visiting the page `/test/index.html`.

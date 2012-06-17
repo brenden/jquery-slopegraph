@@ -110,7 +110,6 @@ For live examples, see demos [#1](http://brenden.github.com/jquery-slopegraph/de
 [#3](http://brenden.github.com/jquery-slopegraph/demo-3.html).
 
 ## Option parameters
-
 <table>
   <thead>
     <tr>
@@ -154,11 +153,6 @@ For live examples, see demos [#1](http://brenden.github.com/jquery-slopegraph/de
       <th>dotSize</th> 
       <td>0</td> 
       <td>The radius of the end-line dots. If 0, then no dots are drawn.</td> 
-    </tr>
-    <tr>
-      <th>dotColor</th> 
-      <td>'#545454'</td> 
-      <td>The color of the end-line dots</td> 
     </tr>
     <tr>
       <th>addClass</th> 
